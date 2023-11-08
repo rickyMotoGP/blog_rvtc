@@ -9,7 +9,7 @@
   
  
     </head>
-    <body class="antialiased">
+    <body>
         <h1>Blog Name</h1>
         <div class='posts'>
             @foreach ($posts as $post)
@@ -19,5 +19,6 @@
             </div>
             @endforeach
         </div>
+        <div class='paginate'>{{ $posts->links()}}</div>
     </body>
 </html>
